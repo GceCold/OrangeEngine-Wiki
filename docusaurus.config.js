@@ -32,6 +32,8 @@ const config = {
     locales: ['zh-Hans'],
   },
 
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+
   presets: [
     [
       'classic',

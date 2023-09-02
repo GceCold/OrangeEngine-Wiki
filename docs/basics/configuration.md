@@ -98,7 +98,7 @@ Mod可以根据该文件中的设置自动将生物名称中**包含**设置名�
 
 服务器动态动画文件
 
-您可以将部分动画拆分为独立的动画文件，把它们只放置在服务器中（无需包含在资源包），在玩家进入服务器后自动为对应模型补充设置的动画。
+您可以将部分动画拆分为独立的动画文件。对于**DynamicAnimation**中的配置动画，只需把它们只放置在服务器中（无需包含在资源包），在玩家进入服务器后自动为对应模型补充设置的动画。对于**AdditionalAnimation**中的配置，需要将它们放置在资源包中，服主可自行选择附加动画位置。
 
 ```yaml title="animations.yml"
 DynamicAnimation:
@@ -106,6 +106,12 @@ DynamicAnimation:
     - AnimationFileName_1
     - AnimationFileName_2
   ModelName_2:
+    - AnimationFileName_2
+
+# 以下动画文件需要包含在本地资源包中
+AdditionalAnimation:
+  ModelName_1:
+    - AnimationFileName_1
     - AnimationFileName_2
 ```
 
@@ -116,8 +122,8 @@ DynamicAnimation:
 请将生成后位于``OrangeEngine/resources/assets/orangeengine/animations``中的动画文件复制到``OrangeEngine/animation``。
 
 :::danger 注意
-请保持文件以**.animation.json**结尾，在配置文件中无需填写``.animation.json``
+请保持文件以**.animation.oe**结尾，在配置文件中无需填写``.animation.oe``
 
-例: 文件名为``player_test.animation.json``，则在配置文件中只需要填写``player_test``
+例: 文件名为``player_test.animation.oe``，则在配置文件中只需要填写``player_test``
 :::
 

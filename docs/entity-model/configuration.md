@@ -18,6 +18,7 @@ Model:
     Height: 3.5625
   # 模型动作初始化默认动作，例如实体空闲时循环播放IDLE指定的动画，走路时播放Walk设置的动画
   Animation:
+    Spawn: spawn
     Idle: idle
     Walk: walk
     Jump: jump
