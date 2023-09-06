@@ -32,7 +32,16 @@ const config = {
     locales: ['zh-Hans'],
   },
 
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        // ashed: true,
+        language: ["en", "zh"],
+      }),
+    ],
+  ],
 
   presets: [
     [
