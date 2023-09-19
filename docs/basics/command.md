@@ -21,6 +21,13 @@ description: 插件指令
 /oe player          玩家模型操作
    => /oe player create [ModelName]    生成玩家模型示例配置文件
    => /oe player bind [ModelName]    绑定玩家模型
+/oe item            物品模型操作
+   => /oe item create [ModelName]                  生成物品模型配置文件
+   => /oe item bind [ModelName]                    为手中的物品绑定模型
+   => /oe item play [AnimationName] [main/off]     当前玩家主(副)手中物品播放动画
+/oe armor           盔甲模型操作
+   => /oe armor create [ModelName]                                     生成物品模型配置文件
+   => /oe armor play [AnimationName] [head/chest/legs/feet]            为手中的物品绑定模型
 /oe reload          重载所有配置文件
 ```
 
