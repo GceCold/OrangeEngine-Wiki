@@ -9,8 +9,7 @@ const FeatureList = [
     description: (
       <>
         插件支持所有1.16.5+所有版本以及所有支持Bukkit插件的核心, 
-        Mod提供Forge 1.18.1、1.18.2、1.19.2 
-        Fabric 1.18.2、1.19.2
+        Mod提供Forge Fabric 1.18.1 1.18.2 1.19.2 1.19.4 1.20.1 1.20.4
       </>
     ),
   },
