@@ -96,6 +96,10 @@ PlayerModel:
       Block: block
       Eat: eat
       Float: float
+      Sit: sit
+      Creative_Idle: creative_idle
+      Creative_Fly: creative_fly
+
 ```
 
 ### 不同动作修改碰撞箱大小
@@ -223,6 +227,9 @@ PlayerModel:
       Block: block
       Eat: eat
       Float: float
+      Sit: sit
+      Creative_Idle: creative_idle
+      Creative_Fly: creative_fly
   FirstPersonMod:
     Head: h_head
     LeftArm: LeftArm

@@ -5,15 +5,11 @@ description: 盔甲模型
 
 # 盔甲模型
 
-:::warning 注意
-目前仅在Forge1.18.2版本的Mod中进行测试
-:::
-
-# 使用模型
+## 使用模型
 
 使用物品模型的绑定指令`/oe item bind [ModelName]`
 
-# 配置文件
+## 配置文件
 
 使用指令`/oe armor create [Name]`可生成初始配置文件，配置文件在`OrangeEngine/model/armor`内。
 
@@ -21,11 +17,11 @@ description: 盔甲模型
 
 `Animation`: 目前默认动画只提供了空闲状态的动画配置，可使用指令播放自定义动画
 
-`GuiSetting`: 同物品模型的配置相同，是用于玩家物品栏中模型渲染的调整，只是将不同部位的盔甲区分处理。
+`GuiSetting`: 是用于玩家物品栏中模型渲染的调整，只是将不同部位的盔甲进行额外的处理。
 
 ```yaml
 ArmorModel:
-  Name: angel_armor
+  Name: test
   ArmorBone:
     HeadBone: armorHead
     BodyBone: armorBody
@@ -42,10 +38,10 @@ ArmorModel:
       Scale:
         X: 1.0
         Y: 1.0
-        Z: -1.0
+        Z: 1.0
       Translate:
         X: 0.0
-        Y: -1.7
+        Y: 0.0
         Z: 0.0
       Rotate:
         X: 0.0
@@ -53,12 +49,12 @@ ArmorModel:
         Z: 0.0
     Body:
       Scale:
-        X: 0.45
-        Y: 0.45
-        Z: -0.45
+        X: 1.0
+        Y: 1.0
+        Z: 1.0
       Translate:
         X: 0.0
-        Y: -0.8
+        Y: 0.0
         Z: 0.0
       Rotate:
         X: 0.0
@@ -71,7 +67,7 @@ ArmorModel:
         Z: 1.0
       Translate:
         X: 0.0
-        Y: -0.6
+        Y: 0.0
         Z: 0.0
       Rotate:
         X: 0.0
@@ -84,11 +80,10 @@ ArmorModel:
         Z: 1.0
       Translate:
         X: 0.0
-        Y: -0.35
+        Y: 0.0
         Z: 0.0
       Rotate:
         X: 0.0
         Y: 0.0
         Z: 0.0
-
 ```
