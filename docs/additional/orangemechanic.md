@@ -254,6 +254,20 @@ identifier说明:
 
 ---
 
+---
+
+✔️ Scale
+
+调整模型缩放尺寸
+
+| 属性       | 别名          | 说明         | 默认 |
+| ---------- | ------------- | ------------ | ---- |
+| width      | w, width      |              |      |
+| height     | h, height     |              |      |
+
+
+---
+
 #### Targeters
 
 ✔️ ModelPart

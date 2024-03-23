@@ -18,6 +18,6 @@ description: 开发计划
 
 
 ### Issues
-- [ ] ChangePart SubModel修复
+- [x] ChangePart SubModel修复
 - [ ] 尝试性修复IA盔甲
 - [ ] @modelpart
